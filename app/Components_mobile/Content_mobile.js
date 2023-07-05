@@ -41,7 +41,7 @@ const Content_mobile = () => {
 
     return (
         <>
-            <div style={{overflowX:"scroll",margin:0,padding:0}}>
+            <div style={{overflowX:"scroll",margin:0,padding:0,color:"black"}}>
                 <div style={{width:"370vw",display:"flex",flexDirection:"row",height:"80vh",marginTop:"6vh"}}>
                     <div style={{width:"80vw",height:"80vh",marginLeft:"10vw"}}>
                         <Todo_mobile arr={todo_arr} />
