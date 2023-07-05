@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import Content from '../Content/Content';
 import Navbar_mobile from './../Components_mobile/Navbar_mobile';
+import Content_mobile from './../Components_mobile/Content_mobile';
 import './Navbar.css';
 
 const Dashboard = () => {
@@ -21,7 +22,7 @@ const Dashboard = () => {
           <Navbar_mobile />
         </header>
         <main>
-          <Content />
+          <Content_mobile />
         </main>
       </div>
     </div>
