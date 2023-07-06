@@ -22,6 +22,18 @@ const Review = (props) => {
                     })
                     :""
                 }
+                <div style={{width:"14vw",height:"12vh",borderRadius:"8px",backgroundColor:"white",display:"flex",flexDirection:"column"}}>
+                    <div style={{display:"flex",flexDirection:"row",width:"14vw",height:"7vh"}}>
+                        <p style={{marginLeft:"0.5vw",marginTop:"1.5vh",fontSize:"1vw"}}><img src="/cross.png" style={{width:"1.5vw",height:"3vh",opacity:"0.3",display:"inline",marginRight:"1vw"}} /> Type your Task
+                        <img src="/sam.png" style={{marginLeft:"1vw",width:"1.5vw",height:"3vh",borderRadius:"50%",display:"inline"}} />
+                        </p>
+                    </div>
+                    <div>
+                        <img src="/attach.png" style={{marginLeft:"0.5vw",width:"1.5vw",height:"3vh",opacity:"0.3",display:"inline",marginRight:"1vw"}} />
+                        <img src="/time.png" style={{width:"1.5vw",height:"3vh",opacity:"0.3",display:"inline",marginRight:"4vw"}} />
+                        <button style={{backgroundColor:"blue",color:"white",width:"4vw",height:"3vh",borderRadius:"6px",fontSize:"1vw"}} >Save</button>
+                    </div>
+                </div>
             </div>
         </>
     )
