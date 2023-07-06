@@ -39,17 +39,17 @@ const Content = () => {
 
     return (
         <>
-            <div style={{maxWidth:"100vw",minHeight:"90vh",paddingTop:"5vh",paddingLeft:"4.5vw",display:"flex",flexDirection:"row"}}>
-                <div style={{width:"19vw",minHeight:"70vh"}}>
+            <div style={{maxWidth:"70vw",paddingTop:"3vh",paddingLeft:"3vw",display:"flex",flexDirection:"row"}}>
+                <div style={{width:"15vw",minHeight:"60vh"}}>
                     <Todo arr={todo_arr} />
                 </div>
-                <div style={{width:"19vw",minHeight:"70vh",marginLeft:"5vw"}}>
+                <div style={{width:"15vw",marginLeft:"2.4vw"}}>
                     <In_work arr={work_arr} />
                 </div>
-                <div style={{width:"19vw",minHeight:"70vh",marginLeft:"5vw"}}>
+                <div style={{width:"15vw",marginLeft:"2.4vw"}}>
                     <Review arr={review_arr} />
                 </div>
-                <div style={{width:"19vw",minHeight:"70vh",marginLeft:"5vw"}}>
+                <div style={{width:"15vw",marginLeft:"2.4vw"}}>
                     <Done arr={done_arr} />
                 </div>
             </div>            
