@@ -20,6 +20,18 @@ const Review_mobile = (props) => {
                     })
                     :""
                 }
+                <div style={{width:"80vw",height:"15vh",borderRadius:"8px",backgroundColor:"white",display:"flex",flexDirection:"column"}}>
+                    <div style={{display:"flex",flexDirection:"row",width:"80vw",height:"7vh",marginBottom:"1vh"}}>
+                        <p style={{marginLeft:"5vw",marginTop:"1.5vh",fontSize:"4vw",fontWeight:"bold"}}><img src="/cross.png" style={{width:"5vw",height:"3vh",opacity:"0.3",display:"inline",marginRight:"5vw"}} /> Type your Task
+                        <img src="/sam.png" style={{marginLeft:"20vw",width:"7vw",height:"4vh",borderRadius:"50%",display:"inline"}} />
+                        </p>
+                    </div>
+                    <div>
+                        <img src="/attach.png" style={{marginLeft:"5vw",width:"5vw",height:"3vh",opacity:"0.3",display:"inline",marginRight:"4vw"}} />
+                        <img src="/time.png" style={{width:"5vw",height:"3vh",opacity:"0.3",display:"inline",marginRight:"40vw"}} />
+                        <button style={{backgroundColor:"blue",color:"white",width:"15vw",height:"4vh",borderRadius:"6px",fontSize:"4vw"}} >Save</button>
+                    </div>
+                </div>
             </div>
         </>
     )

@@ -6,7 +6,7 @@ import Done from './Done';
 
 const Content = () => {
 
-    let arr = [{status:"todo",task:"Hello everyone !!!",id:"1"},{status:"todo",task:"Make money online",id:"2"},{status:"in_work",task:"Types of paper in catalog",id:"3"},{status:"review",task:"Astronomy or Astrology",id:"4"},{status:"done",task:"Copper Canyon",id:"5"},{status:"in_work",task:"Global resort network",id:"8"},{status:"in_work",task:"Development Apps",id:"6"},{status:"in_work",task:"Copper Canyon",id:"7"},{status:"todo",task:"Search Engine Optimization",id:"9"},{status:"todo",task:"Statistic of successfull person",id:"10"},{status:"todo",task:"Getting Free Publicity",id:"11"},{status:"review",task:"Astronomy binoculars are great",id:"12"}];
+    let arr = [{status:"todo",task:"Hello everyone !!!",id:"1"},{status:"todo",task:"Make money online",id:"2"},{status:"in_work",task:"Types of paper in catalog",id:"3"},{status:"review",task:"Astronomy or Astrology",id:"4"},{status:"done",task:"Copper Canyon",id:"5"},{status:"in_work",task:"Global resort network",id:"8"},{status:"in_work",task:"Development Apps",id:"6"},{status:"in_work",task:"Copper Canyon",id:"7"},{status:"todo",task:"Search Engine Optimization",id:"9"},{status:"todo",task:"Statistic of successfull person",id:"10"},{status:"todo",task:"Getting Free Publicity",id:"11"},{status:"done",task:"Astronomy binoculars are great",id:"12"}];
     const [todo_arr , SetTodo] = useState([]);
     const [work_arr , SetWork] = useState([]);
     const [review_arr , SetReview] = useState([]);
@@ -46,11 +46,43 @@ const Content = () => {
                 <div style={{width:"15vw",marginLeft:"2.4vw"}}>
                     <In_work arr={work_arr} />
                 </div>
-                <div style={{width:"15vw",marginLeft:"2.4vw"}}>
-                    <Review arr={review_arr} />
-                </div>
-                <div style={{width:"15vw",marginLeft:"2.4vw"}}>
-                    <Done arr={done_arr} />
+                <div style={{display:"flex",flexDirection:"column"}}>
+                    <div style={{display:"flex",flexDirection:"row"}}>
+                        <div style={{width:"15vw",marginLeft:"2.4vw"}}>
+                            <Review arr={review_arr} />
+                        </div>
+                        <div style={{width:"15vw",marginLeft:"2.4vw"}}>
+                            <Done arr={done_arr} />
+                        </div>
+                    </div>
+                    <div style={{marginTop:"5vh",marginLeft:"4vw",width:"20vw",height:"32vh",borderRadius:"15px",backgroundColor:"white",display:"flex",flexDirection:"column"}}>
+                        <div style={{paddingLeft:"2vw",width:"25vw",height:"5vh",display:"flex",flexDirection:"row"}}>
+                            <p style={{display:"inline",fontSize:"3vw",color:"blue",marginTop:"-2vh"}}>.</p>
+                            <p style={{display:"inline",fontSize:"0.8vw",marginTop:"3vh",marginLeft:"1vw",marginRight:"1vw"}}>Development Apps</p>
+                            <p><img src='/attach.png' style={{width:"1.5vw",height:"3vh",display:"inline",opacity:"0.3",marginTop:"3vh",rotate:"45deg"}} /></p>
+                        </div>
+                        <div style={{paddingLeft:"2vw",marginTop:"3vh",display:"flex",flexDirection:"row"}}>
+                            <p style={{fontSize:"0.8vw"}}>-{`${'>'}`}&nbsp;&nbsp; 4 Subtask </p>
+                            <p style={{fontSize:"0.8vw"}}><img src='/time.png' style={{marginLeft:"3vw",width:"1.5vw",height:"3vh",display:"inline",opacity:"0.3"}} /> &nbsp;Time monitored!</p>
+                        </div>
+                        <div style={{paddingLeft:"2vw",marginTop:"3vh",display:"flex",flexDirection:"row"}}>
+                            <p style={{fontSize:"0.8vw"}}><img src='/cloud.png' style={{width:"1.5vw",height:"3vh",display:"inline",opacity:"0.3"}} />&nbsp; 3 Files </p>
+                            <p style={{fontSize:"0.8vw"}}><img src='/email.png' style={{marginLeft:"4vw",width:"1.5vw",height:"3vh",display:"inline",opacity:"0.3"}} /> &nbsp;7 emails</p>
+                        </div>
+                        <div style={{paddingLeft:"2vw",marginTop:"3vh",display:"flex",flexDirection:"row"}}>
+                            <p style={{fontSize:"0.8vw"}}><img src='/alfred.png' style={{width:"1.5vw",height:"3vh",display:"inline",borderRadius:"50%"}} />&nbsp; Alfred Bryant </p>
+                        </div>
+                        <div style={{borderBottom:"1px solid #e1e1e1",marginTop:"1vh"}} />
+                        <div style={{display:"flex",flexDirection:"row",marginTop:"1vh"}}>
+                            <div style={{display:"flex",flexDirection:"column"}}>
+                                <p style={{marginLeft:"2vw",fontSize:"0.8vw"}}>Start Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; End Date</p>
+                                <p style={{marginLeft:"2vw",fontSize:"0.7vw"}}>Sept 3 , 9:00 pm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sept 4 , 9:00 pm</p>
+                            </div>
+                            <div>
+                                <img src='/right_arrow.png' style={{width:"1.5vw",height:"3vh",opacity:"0.3",marginLeft:"1.5vw",marginTop:"1vh"}} />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>            
         </>

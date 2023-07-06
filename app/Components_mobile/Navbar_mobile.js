@@ -15,7 +15,7 @@ const Navbar_mobile = () => {
 
     return (
         <>
-            <div style={{height:"10vh"}}>
+            <div style={{borderBottom:"2px solid #e1e1e1"}}>
                 <div style={{height:"10vh",display:"flex",flexDirection:"row",curson:"default"}}>
                     <div style={{display:"flex",alignItems:"center",paddingLeft:"3vw",cursor:"pointer"}} onClick={()=>{cl_Handler(-1)}}>
                         <img src='/left_arrow.png' style={{width:"8vw",height:"5vh"}} />

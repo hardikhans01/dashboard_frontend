@@ -29,7 +29,7 @@ const Review = (props) => {
                         </p>
                     </div>
                     <div>
-                        <img src="/attach.png" style={{marginLeft:"0.5vw",width:"1.5vw",height:"3vh",opacity:"0.3",display:"inline",marginRight:"1vw"}} />
+                        <img src="/attach.png" style={{marginLeft:"0.5vw",width:"1.5vw",height:"3vh",opacity:"0.3",display:"inline",marginRight:"1vw",rotate:"45deg"}} />
                         <img src="/time.png" style={{width:"1.5vw",height:"3vh",opacity:"0.3",display:"inline",marginRight:"4vw"}} />
                         <button style={{backgroundColor:"blue",color:"white",width:"4vw",height:"3vh",borderRadius:"6px",fontSize:"1vw"}} >Save</button>
                     </div>

@@ -8,7 +8,7 @@ import Review from "../Content/Review";
 
 const Content_mobile = () => {
 
-    let arr = [{status:"todo",task:"Hello everyone !!!",id:"1"},{status:"todo",task:"Make money online",id:"2"},{status:"in_work",task:"Types of paper in catalog",id:"3"},{status:"review",task:"Astronomy or Astrology",id:"4"},{status:"done",task:"Copper Canyon",id:"5"},{status:"in_work",task:"Global resort network",id:"8"},{status:"in_work",task:"Development Apps",id:"6"},{status:"in_work",task:"Copper Canyon",id:"7"},{status:"todo",task:"Search Engine Optimization",id:"9"},{status:"todo",task:"Statistic of successfull person",id:"10"},{status:"todo",task:"Getting Free Publicity",id:"11"},{status:"review",task:"Astronomy binoculars are great",id:"12"}];
+    let arr = [{status:"todo",task:"Hello everyone !!!",id:"1"},{status:"todo",task:"Make money online",id:"2"},{status:"in_work",task:"Types of paper in catalog",id:"3"},{status:"review",task:"Astronomy or Astrology",id:"4"},{status:"done",task:"Copper Canyon",id:"5"},{status:"in_work",task:"Global resort network",id:"8"},{status:"in_work",task:"Development Apps",id:"6"},{status:"in_work",task:"Copper Canyon",id:"7"},{status:"todo",task:"Search Engine Optimization",id:"9"},{status:"todo",task:"Statistic of successfull person",id:"10"},{status:"todo",task:"Getting Free Publicity",id:"11"},{status:"done",task:"Astronomy binoculars are great",id:"12"}];
 
     const [todo_arr , SetTodo] = useState([]);
     const [work_arr , SetWork] = useState([]);
@@ -41,8 +41,8 @@ const Content_mobile = () => {
 
     return (
         <>
-            <div style={{overflowX:"scroll",margin:0,padding:0,color:"black"}}>
-                <div style={{width:"370vw",display:"flex",flexDirection:"row",height:"80vh",marginTop:"6vh"}}>
+            <div style={{overflowX:"scroll",margin:0,padding:0,color:"gray"}}>
+                <div style={{width:"370vw",display:"flex",flexDirection:"row",height:"65vh",marginTop:"6vh"}}>
                     <div style={{width:"80vw",height:"80vh",marginLeft:"10vw"}}>
                         <Todo_mobile arr={todo_arr} />
                     </div>

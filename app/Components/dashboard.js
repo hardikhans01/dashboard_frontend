@@ -28,12 +28,19 @@ const Dashboard = () => {
         </div>
       </div>
       <div className='mobile_struct bg-gray-100'>
-        <header className="shadow">
+          <div style={{display:"flex",flex:"1",width:"100vw",height:"13vh",flexDirection:"row",borderBottom:"2px solid #e1e1e1",marginBottom:"2vh"}} >
+                    <div style={{width:"12vw",height:"12vw",marginLeft:"3vw",borderRadius:"50%",backgroundColor:"white",display:"inline-flex",alignItems:"center",justifyContent:"center",marginTop:"4vh"}}>
+                        <img src='/menu.png' style={{width:"10vw",height:"6vh",display:"inline"}} />
+                    </div>
+                    <p style={{display:"inline",marginLeft:"10vw",fontWeight:"bold",fontSize:"6vw",marginTop:"5vh"}}>Constructor</p>
+                    <img src='/user.png' style={{display:"inline",width:"10vw",height:"6vh",opacity:"0.3",marginTop:"4.5vh",marginLeft:"25vw"}} />
+          </div>
+          <div style={{border:"2px solid #e1e1e1",margin:"10px",borderRadius:"13px"}}>
           <Navbar_mobile />
-        </header>
         <main>
           <Content_mobile />
         </main>
+        </div>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const Todo_mobile = (props) => {
                     <img src='/3dot.png' style={{marginLeft:"25vw",width:"6vw",height:"4vh"}} />
                     <img src='/plus.png' style={{width:"6vw",height:"4vh",marginLeft:"8vw"}} />
                 </div>
-                <img src='/feather.png' style={{width:"80vw",height:"40vh",marginTop:"5vh",borderRadius:"5px"}} />
+                <img src='/feather.png' style={{width:"80vw",height:"30vh",marginTop:"5vh",borderRadius:"5px"}} />
                 {
                     arr.length>0?
                     arr.map(e=>{
